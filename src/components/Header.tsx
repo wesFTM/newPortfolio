@@ -45,7 +45,7 @@ export default function Header() {
           <div className="relative w-full max-w-4xl aspect-video">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/U-45BZbmvIY?autoplay=1&mute=0"
+              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
               title="Wes Fulghum Video"
               frameBorder="0"
               allow="autoplay; encrypted-media"
