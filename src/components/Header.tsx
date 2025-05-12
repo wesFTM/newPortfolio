@@ -10,15 +10,15 @@ export default function Header() {
 
   return (
     <>
-      <header className="absolute top-0 left-0 w-full z-30 px-8 lg:px-30 py-10 flex items-center justify-between bg-black/40 backdrop-blur-sm">
+      <header className="absolute top-0 left-0 w-full z-30 px-8 lg:px-30 py-5 flex items-center justify-between bg-black/40 backdrop-blur-sm">
         {/* Left: Logo + Subtitle */}
         <div className="flex flex-col items-start space-y-1">
           <Link href="/">
             <Image
               src="/wes_logo25_1.svg"
               alt="Wes Fulghum Logo"
-              width={180}
-              height={70}
+              width={250}
+              height={140}
               unoptimized
             />
           </Link>
@@ -77,9 +77,8 @@ export default function Header() {
           <div className="relative w-full max-w-4xl aspect-video">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/U-45BZbmvIY?autoplay=1&mute=0"
+              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
               title="Wes Fulghum Video"
-              frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
             ></iframe>

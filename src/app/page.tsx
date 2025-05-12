@@ -12,28 +12,24 @@ export default function HomePage() {
     <main className="relative bg-black text-white">
       <Header />
 
-      <section className="relative min-h-screen flex items-center justify-center">
-  {/* Framed video container */}
-  <div className="relative w-full h-full px-10 py-36 md:px-20 lg:px-32 z-0">
-    <div className="rounded-3xl overflow-hidden shadow-2xl w-full h-[80vh] md:h-[90vh]">
-      <video
-        className="w-full h-full object-cover"
-        src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-    </div>
-  </div>
+      <section className="relative pt-24 flex items-center justify-center">
+        <div className="w-full px-6 md:px-20 lg:px-32">
+          <div className="rounded-1xl overflow-hidden shadow-2xl w-full h-[90vh]">
+            <video
+              className="w-full h-full object-cover object-center"
+              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </div>
+        </div>
+      </section>
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/30 z-10 pointer-events-none" />
-</section>
-
-      {/* Projects Section */}
       <ProjectsGrid />
       <Footer />
     </main>
   );
 }
+
