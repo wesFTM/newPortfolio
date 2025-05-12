@@ -80,7 +80,7 @@ export default function ProjectsGrid() {
             />
             <div className="p-4 text-white/80 group-hover:text-white">
               <h3 className="text-xl font-semibold">{project.title}</h3>
-              <p className="text-sm font-semibold">{project.role}</p>
+              <p className="text-s">{project.role}</p>
             </div>
           </Link>
         ))}

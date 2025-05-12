@@ -26,20 +26,20 @@ export default function Header() {
         </div>
 
         {/* Right: Nav + Video Button */}
-        <nav className="flex items-center space-x-6 text-white text-sm md:text-base">
+        <nav className="flex items-center space-x-6 text-white font-bold text-xs md:text-xs">
           <button
             onClick={() => setShowResume(true)}
-            className="hover:underline"
+            className="hover:underline font-bold"
           >
-            About
+            ABOUT
           </button>
-          <Link href="#projects" className="hover:underline">Projects</Link>
-          <Link href="#contact" className="hover:underline">Contact</Link>
+          <Link href="#projects" className="hover:underline">PROJECTS</Link>
+          <Link href="#contact" className="hover:underline">CONTACT</Link>
           <button
             onClick={() => setShowVideo(true)}
-            className="bg-white text-black font-semibold px-4 py-2 rounded hover:bg-gray-200 transition"
+            className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
           >
-            Watch Video
+            WATCH VIDEO
           </button>
         </nav>
       </header>
