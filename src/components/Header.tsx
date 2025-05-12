@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex flex-col items-start space-y-1">
           <Link href="/">
             <Image
-              src="/wes_logo25.svg"
+              src="/wes_logo25_1.svg"
               alt="Wes Fulghum Logo"
               width={180}
               height={70}
