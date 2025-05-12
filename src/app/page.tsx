@@ -1,5 +1,7 @@
 import Header from '@/components/Header';
 import ProjectsGrid from '@/components/ProjectsGrid';
+import Footer from '@/components/Footer';
+
 export const metadata = {
   title: "Wes Fulghum – Designer & Full Stack Developer",
   description: "Portfolio of Wes Fulghum: creative technologist, designer, and full stack developer based in NYC.",
@@ -27,6 +29,7 @@ export default function HomePage() {
 
       {/* Projects Section */}
       <ProjectsGrid />
+      <Footer />
     </main>
   );
 }
