@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <section className="relative min-h-screen flex items-center justify-center">
   {/* Framed video container */}
-  <div className="relative w-full h-full px-10 py-30 md:px-20 lg:px-32 z-0">
+  <div className="relative w-full h-full px-10 py-36 md:px-20 lg:px-32 z-0">
     <div className="rounded-3xl overflow-hidden shadow-2xl w-full h-[80vh] md:h-[90vh]">
       <video
         className="w-full h-full object-cover"
