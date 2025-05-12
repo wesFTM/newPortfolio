@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="absolute top-0 left-0 w-full z-30 px-8 lg:px-30 py-5 flex items-center justify-between bg-black/40 backdrop-blur-sm">
+      <header className="absolute top-0 left-0 w-full z-30 py-10 px-8 lg:px-30 py-5 flex items-center justify-between bg-black/40 backdrop-blur-sm">
         {/* Left: Logo + Subtitle */}
         <div className="flex flex-col items-start space-y-1">
           <Link href="/">

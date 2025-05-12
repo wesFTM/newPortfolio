@@ -1,3 +1,4 @@
+import { FiChevronDown } from 'react-icons/fi';
 import Header from '@/components/Header';
 import ProjectsGrid from '@/components/ProjectsGrid';
 import Footer from '@/components/Footer';
@@ -12,24 +13,29 @@ export default function HomePage() {
     <main className="relative bg-black text-white">
       <Header />
 
-      <section className="relative pt-24 flex items-center justify-center">
-        <div className="w-full px-6 md:px-20 lg:px-32">
-          <div className="rounded-1xl overflow-hidden shadow-2xl w-full h-[90vh]">
-            <video
-              className="w-full h-full object-cover object-center"
-              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-          </div>
+      {/* Video Section */}
+      <section className="pt-0 flex flex-col items-center justify-center">
+        <div className="w-auto h-screen max-w-full overflow-hidden rounded-3xl shadow-2xl animate-fade-in">
+          <video
+            className="h-full w-auto object-contain"
+            src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         </div>
       </section>
+
+      {/* Chevron Below Video */}
+      <div className="flex justify-center -mt-10 mb-20">
+        <a href="#projects" className="text-white/70 hover:text-white transition animate-bounce text-3xl">
+          <FiChevronDown />
+        </a>
+      </div>
 
       <ProjectsGrid />
       <Footer />
     </main>
   );
 }
-
