@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import projects from '@/data/projects'; // assume a local file with project data
 
+
 export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
