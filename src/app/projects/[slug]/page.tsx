@@ -1,7 +1,3 @@
-import { notFound } from 'next/navigation';
-import projects from '@/data/projects'; // assume a local file with project data
-
-
 // src/app/projects/[slug]/page.tsx
 
 interface PageProps {
