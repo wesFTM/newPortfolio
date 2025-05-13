@@ -1,4 +1,6 @@
-// src/app/projects/[slug]/page.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// import { notFound } from 'next/navigation';
+// import { projects } from '@/data/projects';
 
 interface PageProps {
   params: {
@@ -10,8 +12,8 @@ export default function ProjectPage({ params }: PageProps) {
   const { slug } = params;
 
   return (
-    <div className="p-10">
-      <h1 className="text-3xl font-bold">Project: {slug}</h1>
+    <div>
+      <h1>Project: {slug}</h1>
     </div>
   );
 }
