@@ -22,7 +22,7 @@ export default function Header() {
               unoptimized
             />
           </Link>
-          <p className="text-white/70 text-sm">Designer & Full Stack Developer based in NYC</p>
+          <p className="text-white/70 text-sm">Designer & Developer based in NYC</p>
         </div>
 
         {/* Right: Nav + Video Button */}
