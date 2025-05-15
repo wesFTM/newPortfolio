@@ -1,23 +1,28 @@
+'use client';
+
+import { useState } from 'react';
 import { FiChevronDown } from 'react-icons/fi';
 import Header from '@/components/Header';
 import ProjectsGrid from '@/components/ProjectsGrid';
 import Footer from '@/components/Footer';
 
-export const metadata = {
-  title: "Wes Fulghum – Designer & Full Stack Developer",
-  description: "Portfolio of Wes Fulghum: creative technologist, designer, and full stack developer based in NYC.",
-};
-
 export default function HomePage() {
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
     <main className="relative bg-black text-white">
-      <Header />
+      <Header setShowVideo={setShowVideo} setShowResume={function (): void {
+        throw new Error('Function not implemented.');
+      } } />
 
       {/* Inset Video Section */}
       <section className="pt-40 flex flex-col items-center justify-center px-6 md:px-20 lg:px-32">
-        <div className="w-full h-[70vh] overflow-hidden rounded-2xl shadow-2xl animate-fade-in">
+        <div
+          className="w-full h-[70vh] overflow-hidden rounded-2xl shadow-2xl animate-fade-in cursor-pointer bg-black"
+          onClick={() => setShowVideo(true)}
+        >
           <video
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-contain"
             src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
             autoPlay
             muted
@@ -27,7 +32,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Chevron Below Video */}
+      {/* Chevron */}
       <div className="flex justify-center mt-10 mb-20">
         <a href="#projects" className="text-white/70 hover:text-white transition animate-bounce text-3xl">
           <FiChevronDown />
@@ -36,6 +41,28 @@ export default function HomePage() {
 
       <ProjectsGrid />
       <Footer />
+
+      {/* Video Lightbox Modal */}
+      {showVideo && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center px-4">
+          <div className="relative w-full max-w-4xl aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
+              title="Wes Fulghum Video"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+            <button
+              onClick={() => setShowVideo(false)}
+              className="absolute top-2 right-2 text-white text-xl bg-black/60 rounded-full p-2 hover:bg-black"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

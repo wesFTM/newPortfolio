@@ -13,7 +13,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
   if (!project) {
     return (
-      <div className="p-10 text-black">
+      <div className="p-10 text-white">
         <h1 className="text-3xl font-bold">Page doesn’t exist</h1>
         <p className="mt-4">We couldn’t find a project with the slug “{slug}”.</p>
       </div>
@@ -21,9 +21,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <div className="p-10 text-black">
-      <h1 className="text-4xl font-bold">{project.title}</h1>
-      <p className="mt-2 text-black">{project.role}</p>
+    <div className="p-10 text-white">
+      <h1 className="text-4xl font-white">{project.title}</h1>
+      <p className="mt-2 text-white">{project.role}</p>
       <video
         src={project.video}
         controls
