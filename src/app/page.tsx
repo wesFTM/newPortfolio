@@ -38,7 +38,9 @@ export default function HomePage() {
         </a>
       </div>
 
-      <ProjectsGrid />
+     <section id="projects">
+  <ProjectsGrid />
+</section>
       <Footer />
 
       {/* Video Lightbox Modal */}
