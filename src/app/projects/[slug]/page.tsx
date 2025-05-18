@@ -36,7 +36,7 @@ return (
         <p className="mt-3"><span className='font-bold'>Tech:</span> {project.tech}</p>
       </div>
       <p className="mt-20 max-w-2xl text-4xl font-bold">See Campaign Assets Below:</p>
-      <p className="mt-8 max-w-2xl text-2xl font-bold">Main Promo Video</p>
+      
       <p className="mt-3 max-w-2xl">{project.mainDisc}</p>
       <video
         src={project.mainVideo}
