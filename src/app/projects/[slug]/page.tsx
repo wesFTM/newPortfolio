@@ -48,7 +48,7 @@ return (
       <video
         src={project.innovationLink}
         controls
-        className="mt-8 w-full max-w-4xl rounded-lg shadow-lg"
+        className="mt-8 w-full max-w-2xl rounded-lg shadow-lg"
       />
        <p className="mt-8 max-w-2xl text-2xl font-bold">Web Development</p>
       <p className="mt-3 max-w-2xl">{project.websiteDesc}</p>
