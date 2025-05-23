@@ -12,8 +12,6 @@ const phrases = [
   'Video Editing',
   'Creative Direction',
   'Product Design',
-  'Tailwind',
-  'Graphic Design',
 ];
 
 export default function RollingText() {
@@ -27,27 +25,25 @@ export default function RollingText() {
   }, []);
 
   return (
-    <div className="mt-10 w-full flex justify-center text-2xl md:text-3xl font-medium text-white">
-      <div className="flex items-baseline gap-2">
-        <span>I have experience with</span>
-        <div className="relative" style={{ paddingTop: '0.1em', paddingBottom: '0.1em' }}>
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={phrases[index]}
-              initial={{ opacity: 0, y: '0.4em' }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: '-0.4em' }}
-              transition={{ duration: 0.5 }}
-              className="absolute bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
-            >
-              {phrases[index]}
-            </motion.span>
-          </AnimatePresence>
-          {/* Spacer for height to prevent clipping */}
-          <span className="invisible">
-            Frontend Development
-          </span>
-        </div>
+    <div className="mt-10 w-full px-4 flex flex-col items-center text-center text-xl sm:text-2xl md:text-3xl font-medium text-white">
+      {/* Static text on top */}
+      <span className="mb-2">I have experience with</span>
+
+      {/* Animated text below */}
+      <div className="relative h-[1.4em] min-w-[12ch]">
+        <span className="invisible block">Frontend Development</span>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={phrases[index]}
+            initial={{ opacity: 0, y: '0.4em' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '-0.4em' }}
+            transition={{ duration: 0.5 }}
+            className="absolute left-0 top-0 w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent"
+          >
+            {phrases[index]}
+          </motion.span>
+        </AnimatePresence>
       </div>
     </div>
   );
