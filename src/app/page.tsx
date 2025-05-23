@@ -5,6 +5,7 @@ import { FiChevronDown } from 'react-icons/fi';
 import Header from '@/components/Header';
 import ProjectsGrid from '@/components/ProjectsGrid';
 import Footer from '@/components/Footer';
+import RollingText from '@/components/RollingText';
 
 export default function HomePage() {
   const [showVideo, setShowVideo] = useState(false);
@@ -30,7 +31,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-
+      <RollingText />
       {/* Chevron */}
       <div className="flex justify-center mt-10 mb-20">
         <a href="#projects" className="text-white/70 hover:text-white transition animate-bounce text-3xl">
