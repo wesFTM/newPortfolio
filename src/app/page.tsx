@@ -22,7 +22,7 @@ export default function HomePage() {
         >
           <video
             className="w-full h-full object-contain"
-            src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
+            src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025_1280.mp4"
             autoPlay
             muted
             loop
@@ -49,7 +49,7 @@ export default function HomePage() {
           <div className="relative w-full max-w-4xl aspect-video">
             <iframe
               className="w-full h-full"
-              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025.mp4"
+              src="https://pub-040eb69763f14186b11b39e2584847be.r2.dev/WESFULGHUM_DESIGN_DEV_2025_1280.mp4"
               title="Wes Fulghum Video"
               allow="autoplay; encrypted-media"
               allowFullScreen
