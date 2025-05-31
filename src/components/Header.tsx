@@ -32,14 +32,10 @@ export default function Header({ setShowVideo, setShowResume }: HeaderProps) {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-white font-bold text-xs">
-  <button
-  onClick={() => setShowResume?.(true)}
-  className="hover:underline font-bold"
->
-    ABOUT
-  </button>
+        <Link href="/about" className="hover:underline">ABOUT</Link>
+
   <Link href="/#projects" className="hover:underline">PROJECTS</Link>
-  <Link href="#contact" className="hover:underline">CONTACT</Link>
+  <Link href="mailto:wfulghum@gmail.com?subject=Portfolio%20Inquiry" className="hover:underline">CONTACT</Link>
   <button
   onClick={() => setShowVideo?.(true)}
   className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
@@ -64,14 +60,10 @@ export default function Header({ setShowVideo, setShowResume }: HeaderProps) {
   <button onClick={() => setMobileOpen(false)} className="absolute top-4 right-4 text-white">
     <X size={28} />
   </button>
-  <button
-  onClick={() => setShowResume?.(true)}
-  className="hover:underline font-bold"
->
-  ABOUT
-</button>
+  <Link href="/about" className="hover:underline">ABOUT</Link>
+
   <Link href="#projects" onClick={() => setMobileOpen(false)}>PROJECTS</Link>
-  <Link href="#contact" onClick={() => setMobileOpen(false)}>CONTACT</Link>
+  <Link href="mailto:wfulghum@gmail.com?subject=Portfolio%20Inquiry" onClick={() => setMobileOpen(false)}>CONTACT</Link>
   <button
   onClick={() => setShowVideo?.(true)}
   className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
