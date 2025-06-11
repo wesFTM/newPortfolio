@@ -39,7 +39,7 @@ export default function Header({ setShowVideo, setShowResume }: HeaderProps) {
     ABOUT
   </button>
   <Link href="/#projects" className="hover:underline">PROJECTS</Link>
-  <Link href="#contact" className="hover:underline">CONTACT</Link>
+  <Link href="mailto:wfulghum@gmail.com?subject=Hello from Web" className="hover:underline">CONTACT</Link>
   <button
   onClick={() => setShowVideo?.(true)}
   className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
@@ -71,7 +71,7 @@ export default function Header({ setShowVideo, setShowResume }: HeaderProps) {
   ABOUT
 </button>
   <Link href="#projects" onClick={() => setMobileOpen(false)}>PROJECTS</Link>
-  <Link href="#contact" onClick={() => setMobileOpen(false)}>CONTACT</Link>
+  <Link href="mailto:wfulghum@gmail.com?subject=Hello from Web" onClick={() => setMobileOpen(false)}>CONTACT</Link>
   <button
   onClick={() => setShowVideo?.(true)}
   className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
