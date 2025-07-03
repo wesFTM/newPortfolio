@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FiChevronDown } from 'react-icons/fi';
+
 import Header from '@/components/Header';
 import ProjectsGrid from '@/components/ProjectsGrid';
 import Footer from '@/components/Footer';
@@ -48,13 +48,6 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-
-      {/* Chevron */}
-      <div className="flex justify-center mt-10 mb-20">
-        <a href="#projects" className="text-white/70 hover:text-white transition animate-bounce text-3xl">
-          <FiChevronDown />
-        </a>
-      </div>
 
       {/* Projects Section */}
       <section id="projects">

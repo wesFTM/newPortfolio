@@ -73,7 +73,7 @@ const projects = [
     {
       slug: 'michelob',
       title: 'Michelob Ultra Movement Live Platform',
-      role: 'Lead Designer, Motion Graphics, Frontend',
+      role: 'Lead Designer, Interactive and Motion Graphics, Frontend',
       video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/michelob.mp4',
     },
     {

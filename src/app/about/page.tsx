@@ -11,7 +11,7 @@ export default function AboutPage() {
         <section>
           <h1 className="text-4xl font-bold mb-4">About Me</h1>
           <p className="text-lg leading-relaxed">
-            I'm Wes Fulghum, a multidisciplinary designer and developer based in NYC. I specialize in interactive design, frontend development, motion graphics, and creative direction. With a passion for crafting engaging digital experiences, I blend design aesthetics with technical expertise to bring ideas to life.
+            I`&apos;`m Wes Fulghum, a multidisciplinary designer and developer based in NYC. I specialize in interactive design, frontend development, motion graphics, and creative direction. With a passion for crafting engaging digital experiences, I blend design aesthetics with technical expertise to bring ideas to life.
           </p>
         </section>
 
@@ -19,17 +19,27 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold mb-2">Experience</h2>
           <ul className="space-y-4">
             <li>
-              <h3 className="text-xl font-bold">Senior Designer & Developer at Creative Agency</h3>
-              <p className="text-sm text-gray-400">Jan 2020 – Present</p>
+              <h3 className="text-xl font-bold">Senior Designer & Developer</h3>
+              <h4>First Tube | Horizon Media</h4>
+              <p className="text-sm text-gray-400">May 2020 – May 2025</p>
               <p>
-                Lead the design and development of interactive web experiences for a variety of clients, focusing on user engagement and responsive design.
+                Lead the design and development of interactive web experiences for a variety of clients, focusing on user engagement and responsive design backed by meaningful data and insights.
               </p>
             </li>
             <li>
-              <h3 className="text-xl font-bold">Frontend Developer at Tech Startup</h3>
-              <p className="text-sm text-gray-400">Jun 2017 – Dec 2019</p>
+              <h3 className="text-xl font-bold">Sr. Designer</h3>
+              <h4>WME|IMG Endeavor</h4>
+              <p className="text-sm text-gray-400">April 2015 – April 2020</p>
               <p>
-                Developed and maintained the company's main web application, implementing new features and optimizing performance.
+               Help build and foster a design team focused on developing conceptual designs for sales.
+              </p>
+            </li>
+            <li>
+              <h3 className="text-xl font-bold">Designer</h3>
+              <h4>Bonnier Corp. | Popular Photography and American Photo Magazines</h4>
+              <p className="text-sm text-gray-400">March 2012 – April 2015</p>
+              <p>
+               Managed full layout of magazines and contributed a column for fast photoshop fixes.
               </p>
             </li>
           </ul>
