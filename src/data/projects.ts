@@ -76,7 +76,7 @@ const projects = [
       role: 'Lead Designer, Interactive and Motion Graphics, Frontend',
       video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/michelob.mp4',
     },
-    {
+   /* {
       slug: 'ftlive',
       title: 'FT Live - Analytics and Insights Platform',
       role: 'Lead Designer, Frontend',
@@ -93,7 +93,7 @@ const projects = [
       title: 'Inaugural Pickleball Slam',
       role: 'Lead Designer, Motion Graphics, Video Editing Frontend',
       video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/pickleball.mp4',
-    },
+    },*/
   ];
 
   export default projects;
