@@ -70,30 +70,6 @@ const projects = [
       websiteImage: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/GH_web.gif',
       websiteDesc: 'Landing page was built to collect 1PD and promote the multiple shows.',
     },
-    {
-      slug: 'michelob',
-      title: 'Michelob Ultra Movement Live Platform',
-      role: 'Lead Designer, Interactive and Motion Graphics, Frontend',
-      video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/michelob.mp4',
-    },
-   /* {
-      slug: 'ftlive',
-      title: 'FT Live - Analytics and Insights Platform',
-      role: 'Lead Designer, Frontend',
-      video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/ft_live.mp4',
-    },
-    {
-      slug: 'southwest',
-      title: 'Southwest Hawaii Heartbeats',
-      role: 'Lead Designer, Motion Graphics, Frontend',
-      video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/southwest.mp4',
-    },
-    {
-      slug: 'pickleball',
-      title: 'Inaugural Pickleball Slam',
-      role: 'Lead Designer, Motion Graphics, Video Editing Frontend',
-      video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/pickleball.mp4',
-    },*/
   ];
 
   export default projects;
