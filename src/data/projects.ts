@@ -70,6 +70,20 @@ const projects = [
       websiteImage: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/GH_web.gif',
       websiteDesc: 'Landing page was built to collect 1PD and promote the multiple shows.',
     },
+    {
+      slug: 'michelob',
+      title: 'Michelob Ultra Movement Live Platform',
+      role: 'Lead Designer, Frontend',
+      video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/MICHELOB_BRANDED_CONTENT__Inno.mp4',
+      tech: 'Figma, NextJS',
+      mainVideo: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/MICHELOB_BRANDED_CONTENT__1280.mp4',
+      description: 'Working directly with the lead developer, I led frontend development and design for the platform.',
+      mainDisc: 'This was a custom built music program built by FirstTube exclusively for Grubhub.',
+      innovation: 'Built platform to act as the hub for Michelob Ultra workouts.',
+      innovationLink: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/MICHELOB_BRANDED_CONTENT__Inno.mp4',
+      websiteImage: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/MU_WebImage.png',
+      websiteDesc: 'Landing page was built to collect 1PD as well as promote and foster participation.',
+    },
   ];
 
   export default projects;
