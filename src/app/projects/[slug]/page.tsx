@@ -1,7 +1,6 @@
 import projects from '@/data/projects';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
