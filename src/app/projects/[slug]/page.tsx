@@ -1,6 +1,7 @@
 import projects from '@/data/projects';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -53,6 +54,7 @@ return (
       />
        <p className="mt-8 max-w-2xl text-2xl font-bold">Web Development</p>
       <p className="mt-3 max-w-xl">{project.websiteDesc}</p>
+      
       <img src={project.websiteImage}
         className="mt-8 w-full max-w-4xl rounded-lg shadow-lg"
        />

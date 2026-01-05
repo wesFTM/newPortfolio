@@ -11,7 +11,7 @@ export default function AboutPage() {
         <section>
           <h1 className="text-4xl font-bold mb-4">About Me</h1>
           <p className="text-lg leading-relaxed">
-            I`&apos;`m Wes Fulghum, a multidisciplinary designer and developer based in NYC. I specialize in interactive design, frontend development, motion graphics, and creative direction. With a passion for crafting engaging digital experiences, I blend design aesthetics with technical expertise to bring ideas to life.
+            I am multidisciplinary designer and developer based in NYC. I specialize in interactive design, frontend development, motion graphics, and creative direction. With a passion for crafting engaging digital experiences, I blend design aesthetics with technical expertise to bring ideas to life.
           </p>
         </section>
 
