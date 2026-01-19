@@ -188,19 +188,13 @@ const projects: Project[] = [
     innovation:
       'Built custom carousel experience designed to evoke the Saks brand and leave a lasting memory for those who experienced.',
     innovationLink:
-      'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work8-2x1-1%20(1).jpg',
+      'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work4-2x1-1.mp4',
     websiteImage:
       'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work1-2x1-1.jpg',
     websiteDesc:
       '',
 
-    // ⭐ Example of a special field you can now add safely
-    // specialLayout: true,
-    extraImages: [
-      "https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work1-2x1-1.jpg",
-      "https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work2-1x1-1.jpg",
-      "https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work4-2x1-1.jpg",
-    ],
+    
   },
 ];
 
