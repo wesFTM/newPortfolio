@@ -1,24 +1,27 @@
 // src/data/projects.ts
 
+import { Images } from "lucide-react";
+import { Url } from "next/dist/shared/lib/router/router";
+
 export interface Project {
   slug: string;
   title: string;
   role: string;
-
-  description: string;
   mainDisc: string;
-  innovation: string;
 
-  // Optional common fields
+ // Optional common fields
+  description?: string;
+  innovation?: string;
   video?: string;
   mainVideo?: string;
   tech?: string;
   innovationLink?: string;
   websiteDesc?: string;
   websiteImage?: string;
-
-  // ⭐ NEW OPTIONAL FIELD
-  extraImages?: string[];
+  client?: string;
+  team?: string;
+  images?: string[];
+  
 }
 
 const projects: Project[] = [
@@ -43,7 +46,20 @@ const projects: Project[] = [
     mainDisc:
       'This is the main promo used across all parties in the campaign. From concept through production, I storyboarded, created motion graphics, edited, and versioned this piece of content.',
   },
-
+  {
+    slug: 'southwest',
+    title: 'Southwest Airlines Hawaii Heartbeats',
+    role: 'Lead Designer, Motion Graphics, Onsite Graphics, Sweepstakes Frontend',
+    video: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/southwest.mp4',
+    mainVideo:
+      'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Hawaii%20Heart%20Beats%20Concert%20with%20_%20Southwest%20Airlines_1.mp4',
+    description:
+      'Working directly with the creative director, I developed the graphic package used for the Southwest Airlines Hawaii Heartbeats Maui Benefit concert. The package included logo creation, on site prind graphics, and digital promo assets along with a sweepstakes element. The concert was held at the MACC in Maui.',
+    tech: 'Illustrator, After Effects, Premier, HTML, CSS, Javascript',
+    innovationLink:"https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Southwest_images.mp4",
+    mainDisc:
+      'Through Hawaii Heart Beats, Southwest Airlines encouraged Hawaii residents to sign up for a Rapid Rewards account and enter a sweepstakes to win concert tickets, airfare, and a hotel stay. The program culminated with a concert hosted at the Maui Arts and Cultural Center (MACC), that brought Multi-Platinum country artist, Russell Dickerson, and Hawaii local, Lily Meola, to Maui for a weekend full of music, love, and uplifting community support.',
+  },
   {
     slug: 'abi',
     title: 'Anheuser Busch Reventon de Verano',
@@ -193,8 +209,15 @@ const projects: Project[] = [
       'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/saks__work1-2x1-1.jpg',
     websiteDesc:
       '',
-
-    
+  },
+  {
+    slug: "tapped-beer-festival",
+    title: "Tapped Beer Festival",
+    role: "Sr. Designer",
+    video:"https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Tapped_main.mp4",
+    mainDisc:"I worked alongside the team to create a branding package for Tapped Beer Festival with its inaugural event at Barclays Center in Brooklyn. The package included logo design, style guide, and merchandise.",
+    mainVideo: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Tapped_pages.mp4',
+    innovationLink: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Tapped_irl.mp4'
   },
 ];
 

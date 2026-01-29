@@ -31,32 +31,29 @@ return (
     <main className="pt-40 px-6 flex flex-col items-center justify-start text-center">
       <div className="w-full max-w-3xl px-4">
         <h1 className="text-4xl font-bold">{project.title}</h1>
-        <p className="mt-3 text-xl"><span className='font-bold'>My Role:</span> {project.role}</p>
+        <p className="mt-3 text-xl">{project.role}</p>
         <p className="mt-3">{project.description}</p>
-        <p className="mt-3"><span className='font-bold'>Tech:</span> {project.tech}</p>
-      </div>
-      <p className="mt-20 max-w-2xl text-4xl font-bold">See Campaign Assets Below:</p>
-      
-      <p className="mt-3 max-w-2xl">{project.mainDisc}</p>
+        <p className="mt-3">{project.tech}</p>
+        </div>
       <video
         src={project.mainVideo}
         controls
         className="mt-8 w-full max-w-4xl rounded-lg shadow-lg"
       />
+       <p className="mt-3 max-w-2xl">{project.mainDisc}</p>
       
-      <p className="mt-8 max-w-2xl text-2xl font-bold">Innovation Efforts</p>
-      <p className="mt-3 max-w-2xl">{project.innovation}</p>
-      <video
+       <video
         src={project.innovationLink}
         controls
         className="mt-8 w-full max-w-xl rounded-lg shadow-lg"
       />
-       <p className="mt-8 max-w-2xl text-2xl font-bold">Web Development</p>
-      <p className="mt-3 max-w-xl">{project.websiteDesc}</p>
-      
-      <img src={project.websiteImage}
+       <p className="mt-3 max-w-2xl">{project.innovation}</p>
+       <img src={project.websiteImage}
         className="mt-8 w-full max-w-4xl rounded-lg shadow-lg"
        />
+       <p className="mt-3 max-w-xl">{project.websiteDesc}</p>
+     
+      
     </main>
     <Footer />
   </div>
