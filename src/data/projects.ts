@@ -1,8 +1,5 @@
 // src/data/projects.ts
 
-import { Images } from "lucide-react";
-import { Url } from "next/dist/shared/lib/router/router";
-
 export interface Project {
   slug: string;
   title: string;
@@ -20,8 +17,6 @@ export interface Project {
   websiteImage?: string;
   client?: string;
   team?: string;
-  images?: string[];
-  
 }
 
 const projects: Project[] = [
