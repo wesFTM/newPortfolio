@@ -214,6 +214,24 @@ const projects: Project[] = [
     mainVideo: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Tapped_pages.mp4',
     innovationLink: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Tapped_irl.mp4'
   },
+  {
+    slug: "american-photo-magazine",
+    title: "American Photo Magazine | Bonnier Corp.",
+    role: "Sr. Designer and Photo Editor",
+    video:"https://pub-040eb69763f14186b11b39e2584847be.r2.dev/projects-AP.mp4",
+    mainDisc:"Working directly with the Editor in Cheif I was responsible for the print layout and production preflight of all editorial content, as well as, creating a digital version that was published to Apple books. The above are prind production covers and the below are editorial layouts.",
+    mainVideo: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/AP-Covers_1.mp4',
+    innovationLink: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/Ap-layouts-DipBlack%2002_1.mp4'
+  },
+  {
+    slug: "apapa-johns-pizza",
+    title: "Papa Johns Pizza",
+    role: "Sr. Designer and Social Media Content Creator",
+    video:"https://pub-040eb69763f14186b11b39e2584847be.r2.dev/projects-AP_1.mp4",
+    mainDisc:"Working directly with the Creative Director, we worked to crate social media telling the stories of Papa Johns franchise owners highlighting the joy and envolvement of their communities. We also followed a seasonal content plan that highlighted non-traditional holidays like National Pizza month and Nation Chicken month.",
+    mainVideo: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/papas_social.mp4',
+    innovationLink: 'https://pub-040eb69763f14186b11b39e2584847be.r2.dev/papasSocialExamples.mp4'
+  },
 ];
 
 export default projects;
